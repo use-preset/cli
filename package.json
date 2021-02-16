@@ -1,85 +1,23 @@
 {
-  "name": "apply",
-  "version": "0.2.13",
-  "description": "Elegant, ecosystem-agnostic preset mechanism",
-  "license": "MIT",
-  "author": {
-    "name": "Enzo Innocenzi",
-    "email": "enzo@innocenzi.dev",
-    "url": "https://github.com/innocenzi"
-  },
-  "repository": "https://github.com/preset/cli",
-  "main": "dist/api.js",
-  "typings": "dist/api.d.ts",
-  "bin": {
-    "apply": "./bin/run"
-  },
-  "engines": {
-    "node": ">=12"
-  },
-  "files": [
-    "bin",
-    "dist",
-    "src",
-    "init"
+  "private": true,
+  "workspaces": [
+    "packages/*"
   ],
-  "keywords": [
-    "scaffolding",
-    "preset",
-    "productivity"
-  ],
-  "scripts": {
-    "prepare": "rimraf dist && ttsc -b src",
-    "build": "yarn prepare",
-    "test": "jest --runInBand",
-    "test:ci": "jest --verbose --expand",
-    "release": "standard-version --skip.changelog"
-  },
   "devDependencies": {
-    "@types/cross-spawn": "^6.0.2",
-    "@types/debug": "^4.1.5",
-    "@types/fs-extra": "^9.0.1",
-    "@types/jest": "^26.0.10",
-    "@types/node-fetch": "^2.5.7",
-    "@types/rfdc": "^1.1.0",
-    "@types/tmp": "^0.2.0",
-    "@typescript-eslint/parser": "^3.3.0",
-    "eslint": "^7.3.0",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-node": "^11.1.0",
-    "jest": "^26.4.0",
-    "prettier": "^2.0.5",
-    "rimraf": "^3.0.2",
-    "standard-version": "^9.0.0",
-    "ts-jest": "^26.2.0",
-    "ts-node": "^8.10.2",
-    "ttypescript": "^1.5.12",
-    "typescript": "^4.0.5",
-    "typescript-transform-paths": "^2.0.2"
+    "@antfu/eslint-config-ts": "^0.4.3",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "eslint": "^7.20.0"
   },
-  "dependencies": {
-    "@poppinss/cliui": "^2.0.2",
-    "@poppinss/prompts": "^1.1.7",
-    "cac": "^6.6.1",
-    "cosmiconfig": "^7.0.0",
-    "debug": "4.2.0",
-    "deepmerge": "^4.2.2",
-    "detect-indent": "^6.0.0",
-    "enquirer": "^2.3.6",
-    "envfile": "^6.14.0",
-    "esbuild": "^0.8.5",
-    "execa": "^4.1.0",
-    "fast-glob": "^3.2.4",
-    "fs-extra": "^9.0.1",
-    "inversify": "^5.0.1",
-    "module-alias": "^2.2.2",
-    "node-fetch": "^2.6.0",
-    "reflect-metadata": "^0.1.13",
-    "rfdc": "^1.1.4",
-    "simple-git": "^2.18.0",
-    "tmp": "^0.2.1",
-    "ts-bus": "^2.3.1",
-    "tslib": "^2.0.1",
-    "unset-value": "^1.0.0"
-  }
+  "scripts": {
+    "build": "yarn cli:build && yarn core:build",
+    "cli:run": "yarn workspace apply dev",
+    "cli:build": "yarn workspace apply build",
+    "core:build": "yarn workspace @preset/core build"
+  },
+  "name": "preset",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:preset/cli.git",
+  "author": "Enzo Innocenzi <enzo.innocenzi@emersya.com>",
+  "license": "MIT"
 }

@@ -1,0 +1,36 @@
+{
+  "name": "@preset/core",
+  "version": "0.3.0",
+  "license": "MIT",
+  "author": "Enzo Innocenzi",
+  "description": "An elegant, ecosystem-agnostic preset mechanism",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preset/preset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/preset/preset/issues"
+  },
+  "homepage": "https://usepreset.dev",
+  "scripts": {
+    "build": "tsup src/index.ts --dts",
+    "test": "uvu -r esbuild-register tests"
+  },
+  "devDependencies": {
+    "esbuild-register": "^2.0.0",
+    "standard-version": "^9.0.0",
+    "tsup": "^3.12.1",
+    "typescript": "^4.1.5",
+    "uvu": "^0.5.1"
+  },
+  "dependencies": {
+    "cac": "^6.6.1",
+    "debug": "4.3.1",
+    "esbuild": "^0.8.5"
+  }
+}

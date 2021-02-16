@@ -1,0 +1,10 @@
+{
+  "extends": "@antfu/eslint-config-ts",
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-tabs": "off",
+    "@typescript-eslint/no-tabs": "off",
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", "tab"]
+  }
+}

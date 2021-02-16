@@ -1,0 +1,13 @@
+{
+  "name": "@preset/init",
+  "version": "0.0.1",
+  "description": "Starter preset for writing presets.",
+  "main": "index.js",
+  "repository": "https://github.com/preset/preset",
+  "author": "Enzo Innocenzi",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@preset/core": "*"
+  }
+}
