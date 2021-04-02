@@ -4,9 +4,11 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@antfu/eslint-config": "^0.6.2",
     "@antfu/eslint-config-ts": "^0.4.3",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
-    "eslint": "^7.20.0"
+    "eslint": "^7.23.0",
+    "typescript": "^4.2.3"
   },
   "scripts": {
     "build": "yarn cli:build && yarn core:build",

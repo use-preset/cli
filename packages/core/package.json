@@ -22,6 +22,7 @@
     "test": "uvu -r esbuild-register tests"
   },
   "devDependencies": {
+    "@types/fs-extra": "^9.0.9",
     "esbuild-register": "^2.0.0",
     "standard-version": "^9.0.0",
     "tsup": "^3.12.1",
@@ -31,6 +32,9 @@
   "dependencies": {
     "cac": "^6.6.1",
     "debug": "4.3.1",
-    "esbuild": "^0.8.5"
+    "esbuild": "^0.8.5",
+    "fs-extra": "^9.1.0",
+    "simple-git": "^2.37.0",
+    "ts-bus": "^2.3.1"
   }
 }

@@ -5,9 +5,7 @@
   "author": "Enzo Innocenzi",
   "description": "Command-line interface for Preset.",
   "main": "dist/index.js",
-  "bin": {
-    "apply": "dist/index.js"
-  },
+  "bin": "dist/index.js",
   "files": [
     "dist"
   ],

@@ -1,10 +1,25 @@
 {
-  "extends": "@antfu/eslint-config-ts",
-  "rules": {
-    "@typescript-eslint/no-unused-vars": "off",
-    "no-tabs": "off",
-    "@typescript-eslint/no-tabs": "off",
-    "indent": "off",
-    "@typescript-eslint/indent": ["error", "tab"]
-  }
+	"extends": "@antfu/eslint-config",
+	"rules": {
+			"arrow-parens": ["error", "always"],
+			"no-unused-vars": "off",
+			"@typescript-eslint/no-unused-vars": "off",
+			"no-tabs": "off",
+			"@typescript-eslint/no-tabs": "off",
+			"indent": "off",
+			"no-multi-spaces": ["error"],
+			"@typescript-eslint/indent": ["error", "tab"],
+			"@typescript-eslint/no-inferrable-types": "off",
+			"curly": ["error", "all"],
+			"brace-style": ["error", "1tbs", { "allowSingleLine": false }],
+			"object-curly-spacing": "off",
+			"@typescript-eslint/object-curly-spacing": ["error", "always"],
+			"no-use-before-define": "off",
+			"@typescript-eslint/no-use-before-define": [
+					"error",
+					{ "enums": false, "typedefs": false, "ignoreTypeReferences": false, "functions": false }
+			],
+			"standard/no-callback-literal": "off",
+			"vue/html-indent": ["error", "tab"]
+	}
 }
