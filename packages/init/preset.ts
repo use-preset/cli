@@ -44,5 +44,5 @@ Preset.group((preset) => {
 Preset.instruct([
 	`Start editing ${color.magenta('preset.ts')}`,
 	`Put your templates in ${color.magenta('templates/')}`,
-	`Learn more at ${color.magenta('https://usepreset.dev')}`,
+	`Learn more at ${color.magenta('https://preset.dev')}`,
 ]).withHeading('What\'s next?')

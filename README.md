@@ -1,6 +1,6 @@
 <p align="center">
   <br />
-  <a href="https://usepreset.dev">
+  <a href="https://preset.dev">
     <img width="100" src="./.github/assets/logo.svg" alt="Logo of the Preset tool">
   </a>
   <br />
@@ -38,7 +38,7 @@
   <br />
   It was made to automate the repetitive task of doing the same modifications each time a project is created. 
   <br />
-  <a href="https://usepreset.dev">Learn more</a>
+  <a href="https://preset.dev">Learn more</a>
 </div>
 
 <p align="center">

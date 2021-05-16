@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/preset/preset/issues"
   },
-  "homepage": "https://usepreset.dev",
+  "homepage": "https://preset.dev",
   "scripts": {
     "build": "tsup src/index.ts --dts",
     "test": "uvu -r esbuild-register tests"
