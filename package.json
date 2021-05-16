@@ -11,7 +11,7 @@
     "typescript": "^4.2.3"
   },
   "scripts": {
-    "build": "yarn cli:build && yarn core:build",
+    "build": "yarn core:build && yarn cli:build",
     "cli:run": "yarn workspace apply dev",
     "cli:build": "yarn workspace apply build",
     "core:build": "yarn workspace @preset/core build"

@@ -1,4 +1,4 @@
 // todo
-export function applyPreset() {
+export function apply() {
 	console.log('preset applied')
 }

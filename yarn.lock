@@ -478,7 +478,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@preset/core@*, @preset/core@workspace:packages/core":
+"@preset/core@*, @preset/core@^0.3.0, @preset/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@preset/core@workspace:packages/core"
   dependencies:
@@ -936,7 +936,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "apply@workspace:packages/cli"
   dependencies:
-    "@preset/core": "*"
+    "@preset/core": ^0.3.0
     cac: ^6.6.1
     debug: 4.3.1
     esbuild: ^0.8.5

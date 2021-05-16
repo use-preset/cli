@@ -1,5 +1,5 @@
 #!/bin/env node
 
-import { applyPreset } from '@preset/core'
+import { apply } from '@preset/core'
 
-applyPreset()
+apply()
